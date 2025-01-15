@@ -38,7 +38,7 @@ else
 fi
 
 # Téléchargement de PulseAudio
-PULSEAUDIO_URL="http://ftp.us.debian.org/debian/pool/main/p/pulseaudio/pulseaudio_14.2.orig.tar.gz"
+PULSEAUDIO_URL="https://freedesktop.org/software/pulseaudio/releases/pulseaudio-16.1.tar.xz"
 PULSEAUDIO_ARCHIVE="pulseaudio-14.2.tar.gz"
 
 if [ ! -f "$DEPENDENCIES_DIR/$PULSEAUDIO_ARCHIVE" ]; then
