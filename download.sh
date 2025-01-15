@@ -20,6 +20,7 @@ if [ ! -f "$NOVNC_ARCHIVE" ]; then
     echo "Téléchargement de noVNC..."
     wget -O "$NOVNC_ARCHIVE" "$NOVNC_REPO"
     unzip "$NOVNC_ARCHIVE"
+    rm "$NOVNC_ARCHIVE"
 else
     echo "noVNC déjà téléchargé."
 fi
@@ -43,6 +44,7 @@ if [ ! -f "$PULSEAUDIO_ARCHIVE" ]; then
     echo "Téléchargement de PulseAudio..."
     wget -O "$PULSEAUDIO_ARCHIVE" "$PULSEAUDIO_URL"
     tar -xzf "$PULSEAUDIO_ARCHIVE"
+    rm "$PULSEAUDIO_ARCHIVE"
 else
     echo "PulseAudio déjà téléchargé."
 fi
@@ -55,6 +57,7 @@ if [ ! -f "$XORG_ARCHIVE" ]; then
     echo "Téléchargement de Xorg..."
     wget -O "$XORG_ARCHIVE" "$XORG_URL"
     tar -xzf "$XORG_ARCHIVE"
+    rm "$XORG_ARCHIVE"
 else
     echo "Xorg déjà téléchargé."
 fi
